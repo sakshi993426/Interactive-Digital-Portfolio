@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi Kumari | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">MY PORTFOLIO</a>
+
+        <!-- Desktop Menu -->
+        <ul class="nav-links" id="desktopMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <!-- Theme toggle -->
+        <button class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- ✅ Mobile Side Drawer -->
+    <div class="side-drawer" id="sideDrawer">
+        <button class="close-btn" id="closeBtn"><i class="fas fa-times"></i></button>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- ✅ Overlay (blur background when menu opens) -->
+    <div class="overlay" id="overlay"></div>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="background-animation" id="particles"></div>
+        <div class="hero-content">
+            <h1>Hello, I'm <span class="typing-text" id="typing-text"></span></h1>
+            <p>“Hi, I’m Sakshi — Building Intelligent Systems with AI & ML — Passionate about Learning, Coding, and Creating Innovative Solutions..</p>
+            <a href="#projects" class="cta-button">View Projects</a>
+        </div>
+
+        <!-- Profile Circle with Glowing Effect -->
+        <div class="profile-circle">
+            <img src="Sakshi.png" alt="Sakshi Kumari">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="profile-img">
+                <img src="Sakshi.jpg" alt="Sakshi Kumari">
+            </div>
+            <div class="about-text">
+                <p>Hi! I’m Sakshi Kumari — Passionate tech enthusiast learning Data Science and exploring Artificial Intelligence (AI), Machine Learning (ML), Natural Language Processing (NLP), Deep Learning, and Cloud Computing.</p>
+
+                 <p>  With a strong foundation in Python and Data Structures & Algorithms, I enjoy building intelligent systems that solve real-world problems. Always eager to learn, build, and contribute to meaningful innovation.</p> 
+
+                  <p>   My goal is to create ethical, data-driven solutions that make a positive impact in healthcare,
+                    education, and sustainability.</p>
+                <a href="Sakshi Kumari.pdf" class="resume-button" download="sakshi-kumari-resume.pdf">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+     <div class="skill-card" data-tilt>
+      <i class="fas fa-robot skill-icon"></i>
+      <h3 class="skill-name">Machine Learning</h3>
+      <div class="skill-progress">
+        <div class="skill-bar" style="width: 0%;" data-width="90%"></div>
+      </div>
+    </div>
+    <div class="skill-card" data-tilt>
+      <i class="fas fa-brain skill-icon"></i>
+      <h3 class="skill-name">Deep Learning</h3>
+      <div class="skill-progress">
+        <div class="skill-bar" style="width: 0%;" data-width="88%"></div>
+      </div>
+    </div>
+     <div class="skill-card" data-tilt>
+      <i class="fas fa-language skill-icon"></i>
+      <h3 class="skill-name">Natural Language Processing (NLP)</h3>
+      <div class="skill-progress">
+        <div class="skill-bar" style="width: 0%;" data-width="85%"></div>
+      </div>
+    </div>
+
+    <div class="skill-card" data-tilt>
+      <i class="fab fa-python skill-icon"></i>
+      <h3 class="skill-name">Python Programming</h3>
+      <div class="skill-progress">
+        <div class="skill-bar" style="width: 0%;" data-width="95%"></div>
+      </div>
+    </div>
+
+    <div class="skill-card" data-tilt>
+      <i class="fas fa-cloud skill-icon"></i>
+      <h3 class="skill-name">Cloud Computing</h3>
+      <div class="skill-progress">
+        <div class="skill-bar" style="width: 0%;" data-width="85%"></div>
+      </div>
+    </div>
+
+    <div class="skill-card" data-tilt>
+      <i class="fas fa-magic skill-icon"></i>
+      <h3 class="skill-name">Generative AI</h3>
+      <div class="skill-progress">
+        <div class="skill-bar" style="width: 0%;" data-width="90%"></div>
+      </div>
+    </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+           <div class="project-card" data-tilt>
+                <div class="project-img">
+                    <img src="Project.png" alt="Employee Salary Prediction">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Employee Salary Prediction</h3>
+                    <p class="project-desc">This project is a Capstone Machine Learning project focused on predicting whether an employee earns more than $50K per year using demographic and employment data.
+                        The model is trained on the UCI Adult Income Dataset, and various ML algorithms were applied. After comparison, the GradientBoosting Classifier was chosen as the best-performing model.</p>
+                    <div class="project-links">
+                        <a href="https://employee-salary-prediction-s.streamlit.app/"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/sakshi993426/Employee-salary-prediction.git"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-img">
+                    <img src="newww.gif" alt="Project">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Project 2</h3>
+                    <p class="project-desc">.                                                                                                                                                                                 .</p>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-img">
+                    <img src="newww.gif" alt="Project 3">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Project 3</h3>
+                    <p class="project-desc">.                                                                                                                                             .</p>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates" id="certificates">
+        <h2 class="section-title">Achievements & Certificates</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="certificate-card">
+                    <!-- <h1>Coming SooN</h1> -->
+                    <h3 class="certificate-title">
+                        Artificial Intelligence Fundamentals
+                    </h3>
+                    <p class="certificate-org">
+                    <a href="AI.pdf" target="_blank" rel="noopener noreferrer" class="https://www.credly.com/badges/12f7b1c2-5cd6-4b4e-988b-eaeb0c53c26d" style="text-decoration: none; color: #6c63ff;"> IBM SkillsBuild</a></p>
+                    <p class="certificate-date">Completed: June 2025</p>
+                </div>
+            </div>
+          <div class="timeline-item">
+                <div class="certificate-card">
+                    <h3 class="certificate-title">Web Development Fundamentals</h3>
+                    <p class="certificate-org">
+                        <a href="Web.pdf" target="_blank" rel="noopener noreferrer" class="certificate-link" style="text-decoration: none; color: #6c63ff;">IBM SkillsBuild</a>
+                    </p>
+                    <p class="certificate-date">Completed: Oct 2025</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="certificate-card">
+                    <h1>Coming SooN</h1>
+                    <!-- <h3 class="certificate-title">Python for Data Science</h3>
+                    <p class="certificate-org">edX</p>
+                    <p class="certificate-date">Completed: December 2022</p> -->
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="certificate-card">
+                    <h1>Coming SooN</h1>
+                    <!-- <h3 class="certificate-title">AI Ethics Certification</h3>
+                    <p class="certificate-org">Google</p>
+                    <p class="certificate-date">Completed: September 2022</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form id="contactForm" action="https://formspree.io/f/mdklypre" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+
+                    <!-- ✅ Success Message Placeholder -->
+                    <p id="successMsg" class="success-msg">✅ Message sent successfully!</p>
+                </form>
+
+
+            </div>
+            <div class="contact-info">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sakshi-kumari-6a641b350/" class="social-link"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/sakshi993426" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://WA.me/" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/sakshikumari" class="social-link"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-envelope"></i>
+                    <span>sakshi7488234@gmail.com</span>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 9999999999</span>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Motihari, Bihar</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Sakshi Kumari. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
